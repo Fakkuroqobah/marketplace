@@ -8,6 +8,9 @@ body {
 .black {
     color: #000000 !important;
 }
+.text-color {
+    color: #C3745E !important;
+}
 
 nav.navbar {
     background-color: #765848;
@@ -26,10 +29,10 @@ a.link-cart img {
 }
 
 /* search */
-form.form-search {
+div.form-search {
     width: 50%;
 }
-input {
+input, select, option {
     color: #000000 !important;
     opacity: 1;
 }
@@ -40,6 +43,15 @@ input:focus {
 }
 
 /* button */
+.btn-primary {
+    background-color: #765848;
+    border-color: #ffffff;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    background-color: #765848 !important;
+    border-color: #AB8B74 !important;
+}
+
 .btn-outline-primary {
     border-radius: 15px;
     border-color: #ffffff;
@@ -70,6 +82,32 @@ input:focus {
     width: 50px;
 }
 
+/* panel */
+.panel{
+    width: 100%;
+    display: inline-block;
+    height: 80px;
+    line-height: 70px;
+    background-color: white;
+    border-bottom: 10px solid #C3745E;
+    font-size: 30px;
+    color: #C3745E;
+}
+.panel img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.panel a{
+    color: #C3745E;
+}
+.panel .help{
+    text-decoration: none;
+    float: right;
+    padding-left: 10px;
+    border-left: 5px solid #765848;
+}
+
 @media(max-width: 768px) {
     .navbar {
         top: 0;
@@ -91,5 +129,10 @@ input:focus {
     }
     li.login-wrap {
         margin-right: 0 !important;
+    }
+
+    .panel {
+        margin-top: 60px;
+        font-size: 22px;
     }
 }

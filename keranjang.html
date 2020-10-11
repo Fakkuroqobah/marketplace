@@ -8,9 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
     <!-- css -->
+    <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/katalog.css">
+    <link rel="stylesheet" href="css/keranjang.css">
     <link rel="stylesheet" href="css/landing.css">
 
     <title>Katalog</title>
@@ -85,7 +86,7 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <img class="img-logo mr-2" src="img/logo/marketplace.png" alt="MarketPlace">
-            <a class="navbar-brand" href="#">MarketPlace</a>
+            <a class="navbar-brand" href="index.html">MarketPlace</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -120,133 +121,130 @@
     </nav>
     <!-- template -->
 
-    <div class="container carousel-wrap">
-        <p class="mt-4 text-title">Pencarian "iPhone X"</p>
+    <!-- panel -->
+    <div class="panel">
+        <div class="container">
+        <span class="text-color">Keranjang</span>
+            <a class="help" href="">
+                <img src="img/Repeat Grid 1.png" alt="rpt">
+                <span class="text-color">Bantuan</span>
+            </a>
+        </div>
+    </div>
+    <!-- akhir panel -->
 
-        <div class="row">
-            <div class="col-md-3">
-                <label for="sort">Sort by</label>
-                <select id="sort" class="form-control">
-                    <option>Terpopuler</option>
-                    <option>Harga termurah</option>
-                    <option>Harga tertinggi</option>
-                    <option>Produk diskon</option>
-                </select>
+    <div class="container">
+        <p class="mt-4 text-title">Produk di pesan</p>
+        <div class="content mt-4">
+            <div class="table-responsive">
+                <table class="table table-bordered  text-center">
+                    <thead>
+                        <tr>
+                            <th scope="col"><span class="text-color">No</span></th>
+                            <th scope="col"><span class="text-color">Gambar</span></th>
+                            <th scope="col"><span class="text-color">Varian</span></th>
+                            <th scope="col"><span class="text-color">Harga</span></th>
+                            <th scope="col"><span class="text-color">Quantity</span></th>
+                            <th scope="col"><span class="text-color">Jumlah</span></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row"><span class="text-color">1</span></th>
+                            <td><img src="img/product/iphone.png" class="img-produk"></td>
+                            <td><span class="text-color">Biru tosca - XL</span></td>
+                            <td><span class="text-color">Rp. 400.000</span></td>
+                            <td><span class="text-color">3</span></td>
+                            <td><span class="text-color">Rp. 1.200.000</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><span class="text-color">2</span></th>
+                            <td><img src="img/product/iphone.png" class="img-produk"></td>
+                            <td><span class="text-color">Biru tosca - XL</span></td>
+                            <td><span class="text-color">Rp. 400.000</span></td>
+                            <td><span class="text-color">2</span></td>
+                            <td><span class="text-color">Rp. 800.000</span></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+        </div>
 
-            <div class="col-md-4">
-                <label>Rentang harga</label>
-                <div class="row">
-                    <div class="col-md-5">
-                        <input type="number" class="form-control" placeholder="minimum">
-                    </div>
-                    
-                    <div class="col-md-5">
-                        <input type="number" class="form-control" placeholder="maksimum">
-                    </div>
+        <p class="mt-4 text-title">Alamat pengiriman</p>
+        <div class="content mt-4">
+            <div class="d-flex justify-content-between">
+                <h5><strong class="text-color">Bp. Joko Tingkir - 082345009678</strong></h5>
+                <a href="#"><i class="fa fa-pencil text-color" id="pencil" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Ubah alamat"></i></a>
+            </div>
+            <hr color="#C3745E">
 
-                    <div class="col-md-2">
-                        <button class="btn btn-primary">Filter</button>
+            <p class="text-color"><strong class="text-color">Penerima</strong> : Sekretariat Negara Istana Kepresidenan</p>
+            <p class="text-color"><strong class="text-color">Alamat</strong>  : Jl. Ahmad Yani Jend. No.3, Ngupasan, Kec. Gondomanan, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55122</p>
+        </div>
+
+        <div class="content mt-4">
+            <h5><strong class="text-color">Ongkos kirim</strong></h5>
+            <hr color="#C3745E">
+
+            <div class="row">
+                <div class="col-md-4 col-6">
+                    <div class="form-group">
+                        <label for="berat" class="text-color">Berat</label>
+                        <div class="input-group mb-3">
+                            <input type="number" class="black" value="6000" disabled style="width: 60%; padding-left: 10px;">
+                            <div class="input-group-append">
+                                <span class="input-group-text" style="color: #000000 !important;">gram</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-6">
+                    <div class="form-group">
+                        <label for="berat" class="text-color">Kurir</label>
+                        <select id="sort" class="form-control">
+                            <option>- Pilih kurir -</option>
+                            <option>JNE</option>
+                            <option>JNT</option>
+                            <option>TIKI</option>
+                            <option>POS Indonesia</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-12">
+                    <div class="form-group">
+                        <label for="berat" class="text-color">Harga</label>
+                        <input type="text" class="black form-control" value="Rp. 24.000" disabled>
                     </div>
                 </div>
             </div>
+
+            <h5 class="mt-4"><strong class="text-color">Total bayar</strong></h5>
+            <hr color="#C3745E">
+            <table>
+                <tr>
+                    <td><span class="text-color">SubTotal</span></td>
+                    <td><span class="text-color">:</span></td>
+                    <td><span class="text-color">Rp. 2.000.000</span></td>
+                </tr>
+
+                <tr>
+                    <td><span class="text-color">Ongkos</span></td>
+                    <td><span class="text-color">:</span></td>
+                    <td><span class="text-color">Rp. 24.000</span></td>
+                </tr>
+
+                <tr>
+                    <td><span class="text-color">Total</span></td>
+                    <td><span class="text-color">:</span></td>
+                    <td><strong class="text-color">Rp. 2.024.000</strong></td>
+                </tr>
+            </table>
+
+            <a href="pembayaran.html" class="mt-4 btn btn-primary btn-block">Checkout</a>
         </div>
-
-        <div class="row mt-4">
-            <div class="col-md-2 col-s-6 col-6 rekomendasi-wrap">
-                <a href="">
-                    <div class="card">
-                        <img class="card-img-top" src="img/product/iphone.png" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text-rekomendasi">Elektronik</p>
-                            <h5 class="card-title">iPhone X</h5>
-                            <p class="card-price">Rp. 23.000.000</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-2 col-s-6 col-6 rekomendasi-wrap">
-                <a href="">
-                    <div class="card">
-                        <img class="card-img-top" src="img/product/iphone.png" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text-rekomendasi">Elektronik</p>
-                            <h5 class="card-title">iPhone X</h5>
-                            <p class="card-price">Rp. 23.000.000</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-2 col-s-6 col-6 rekomendasi-wrap">
-                <a href="">
-                    <div class="card">
-                        <img class="card-img-top" src="img/product/iphone.png" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text-rekomendasi">Elektronik</p>
-                            <h5 class="card-title">iPhone X</h5>
-                            <p class="card-price">Rp. 23.000.000</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-2 col-s-6 col-6 rekomendasi-wrap">
-                <a href="">
-                    <div class="card">
-                        <img class="card-img-top" src="img/product/iphone.png" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text-rekomendasi">Elektronik</p>
-                            <h5 class="card-title">iPhone X</h5>
-                            <p class="card-price">Rp. 23.000.000</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-2 col-s-6 col-6 rekomendasi-wrap">
-                <a href="">
-                    <div class="card">
-                        <img class="card-img-top" src="img/product/iphone.png" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text-rekomendasi">Elektronik</p>
-                            <h5 class="card-title">iPhone X</h5>
-                            <p class="card-price">Rp. 23.000.000</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-2 col-s-6 col-6 rekomendasi-wrap">
-                <a href="">
-                    <div class="card">
-                        <img class="card-img-top" src="img/product/iphone.png" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text-rekomendasi">Elektronik</p>
-                            <h5 class="card-title">iPhone X</h5>
-                            <p class="card-price">Rp. 23.000.000</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-
-        <nav class="mt-4" aria-label="Page navigation">
-            <ul class="pagination justify-content-end">
-                <li class="page-item">
-                    <a class="page-link" href="#" tabindex="1"><<</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item active" aria-current="page">
-                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#">>></a>
-                </li>
-            </ul>
-        </nav>
     </div>
     
     <!-- temlate -->
@@ -275,9 +273,9 @@
 
                 <div class="col-md-2 layanan">
                     <h4 class="mt-4">Informasi</h4>
-                    <a href="">Bantuan</a>
-                    <a href="">Buka toko</a>
-                    <a href="">Gratis ongkir</a>
+                    <a href="">Bantuan</a> <br>
+                    <a href="">Buka toko</a> <br>
+                    <a href="">Gratis ongkir</a> <br>
                     <a href="">Klaim voucher</a>
                 </div>
 
@@ -302,5 +300,8 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        $('#pencil').tooltip();
+    </script>
 </body>
 </html>

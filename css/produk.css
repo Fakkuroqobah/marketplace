@@ -1,0 +1,22 @@
+.content {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.img-produk {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.icon-pedagang {
+    width: 60px;
+    float: left;
+}
+
+@media(max-width: 768px) {
+    .category-wrap {
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,40 @@
+
+.kartu{
+    /* display: inline-block; */
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    background-color: khaki;
+    text-align: center;
+    margin: 30px auto;
+    border-radius: 18px;
+}
+.kartu span {
+    color: #765848 !important;
+}
+table{
+    margin: 10px auto;
+}
+td [type]{
+    width: 300px;
+    margin: 10px auto;
+    
+}
+td .alamat{
+    height: 100px;
+}
+td .data{
+    width: 20px;
+}
+span{
+    margin-left: 5px;
+}
+td img{
+    width: 60px;
+    height: 30px;
+    margin-left: 10px;
+}
+#gambar{
+    width: 20px;
+    height: 20px;
+}

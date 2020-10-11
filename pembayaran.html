@@ -1,21 +1,23 @@
 <!doctype html>
 <html lang="en">
-<head>
+  <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-
-    <!-- css -->
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/katalog.css">
-    <link rel="stylesheet" href="css/landing.css">
 
-    <title>Katalog</title>
-</head>
-<body>
+    <!-- My Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/pembayaran.css">
+
+    <title>Pembayaran</title>
+  </head>
+  <body>
     <!-- template -->
     <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -80,12 +82,10 @@
         </div>
     </div>
 
-
-
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <img class="img-logo mr-2" src="img/logo/marketplace.png" alt="MarketPlace">
-            <a class="navbar-brand" href="#">MarketPlace</a>
+            <a class="navbar-brand" href="index.html">MarketPlace</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -120,137 +120,63 @@
     </nav>
     <!-- template -->
 
-    <div class="container carousel-wrap">
-        <p class="mt-4 text-title">Pencarian "iPhone X"</p>
+        <!-- panel -->
+        <div class="panel">
+          <div class="container">
+            <span class="text-color">Pilih Metode Pembayaran</span>
+            <a class="help" href="">
+              <img src="img/Repeat Grid 1.png" alt="rpt">
+              <span class="text-color">Bantuan</span>
+            </a>
+          </div>
+        </div>
+        <!-- akhir panel -->
 
-        <div class="row">
-            <div class="col-md-3">
-                <label for="sort">Sort by</label>
-                <select id="sort" class="form-control">
-                    <option>Terpopuler</option>
-                    <option>Harga termurah</option>
-                    <option>Harga tertinggi</option>
-                    <option>Produk diskon</option>
-                </select>
-            </div>
-
-            <div class="col-md-4">
-                <label>Rentang harga</label>
-                <div class="row">
-                    <div class="col-md-5">
-                        <input type="number" class="form-control" placeholder="minimum">
-                    </div>
-                    
-                    <div class="col-md-5">
-                        <input type="number" class="form-control" placeholder="maksimum">
-                    </div>
-
-                    <div class="col-md-2">
-                        <button class="btn btn-primary">Filter</button>
-                    </div>
-                </div>
-            </div>
+        <!-- bayar -->
+        <div class="bayar">
+          <div class="container">
+          <p class="sisa">Sisa saldo anda sekarang : <span> 0-, IDR</span></p>
+          <p class="top">Top up saldo anda sekarang untuk mempermudah pembayaran dan banyak promo menunggu!!!</p>
+          <p class="sekarang">*S&K</p>
         </div>
 
-        <div class="row mt-4">
-            <div class="col-md-2 col-s-6 col-6 rekomendasi-wrap">
-                <a href="">
-                    <div class="card">
-                        <img class="card-img-top" src="img/product/iphone.png" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text-rekomendasi">Elektronik</p>
-                            <h5 class="card-title">iPhone X</h5>
-                            <p class="card-price">Rp. 23.000.000</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
+        <div class="container">
+          <div class="row pilihan text-center">
+            <form action="">
+              <div class="box">
+                <p>Kartu Kredit atau Debit</p>
+                <a href="kartu kredit.html" class="btn btn-primary"><img src="img/master card.jpg" alt="mst"><img src="img/visa.png" alt="vs"></a>
+              </div>
 
-            <div class="col-md-2 col-s-6 col-6 rekomendasi-wrap">
-                <a href="">
-                    <div class="card">
-                        <img class="card-img-top" src="img/product/iphone.png" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text-rekomendasi">Elektronik</p>
-                            <h5 class="card-title">iPhone X</h5>
-                            <p class="card-price">Rp. 23.000.000</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
+              <div class="box mt-4">
+                <p>Tranfer Bank</p>
+                <a href="kartu kredit.html" class="btn btn-primary"><img src="img/atmbersama.jpg" alt="atm"><img src="img/alto.png" alt="alt"><img src="img/prima.png" alt="prima"></a>
+              </div>
 
-            <div class="col-md-2 col-s-6 col-6 rekomendasi-wrap">
-                <a href="">
-                    <div class="card">
-                        <img class="card-img-top" src="img/product/iphone.png" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text-rekomendasi">Elektronik</p>
-                            <h5 class="card-title">iPhone X</h5>
-                            <p class="card-price">Rp. 23.000.000</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
+              <div class="box mt-4">
+                <p>E Wallet</p>
+                <a href="kartu kredit.html" class="btn btn-primary"><img src="img/dana.png" alt="dna" class="crcl"><img src="img/ovo.jpg" alt="ovo"><img src="img/gopay.png" alt=""></a>
+              </div>
 
-            <div class="col-md-2 col-s-6 col-6 rekomendasi-wrap">
-                <a href="">
-                    <div class="card">
-                        <img class="card-img-top" src="img/product/iphone.png" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text-rekomendasi">Elektronik</p>
-                            <h5 class="card-title">iPhone X</h5>
-                            <p class="card-price">Rp. 23.000.000</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-2 col-s-6 col-6 rekomendasi-wrap">
-                <a href="">
-                    <div class="card">
-                        <img class="card-img-top" src="img/product/iphone.png" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text-rekomendasi">Elektronik</p>
-                            <h5 class="card-title">iPhone X</h5>
-                            <p class="card-price">Rp. 23.000.000</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-2 col-s-6 col-6 rekomendasi-wrap">
-                <a href="">
-                    <div class="card">
-                        <img class="card-img-top" src="img/product/iphone.png" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text-rekomendasi">Elektronik</p>
-                            <h5 class="card-title">iPhone X</h5>
-                            <p class="card-price">Rp. 23.000.000</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
+              <div class="box mt-4">
+                <p>My Saldo</p>
+                <a href="kartu kredit.html" class="btn btn-primary"><img src="img/Icon awesome-dollar-sign.png" alt="mny" class="crcl"></a>
+              </div>
+            </form>
+          </div>
+        </div>
+          <!-- akhir bayar -->
+          
+          <!-- security -->
+          <div class="container mt-4">
+              <img src="img/Icon awesome-lock.png" alt="lock"><span> Info pembayaran anda disimpan secara aman. Pelajari selengkapnya.</span>
+          </div>
+          <!-- akhir scurity -->
         </div>
 
-        <nav class="mt-4" aria-label="Page navigation">
-            <ul class="pagination justify-content-end">
-                <li class="page-item">
-                    <a class="page-link" href="#" tabindex="1"><<</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item active" aria-current="page">
-                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#">>></a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    
-    <!-- temlate -->
-    <div class="footer">
+
+      <!-- template -->
+      <div class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 tentang">
@@ -275,9 +201,9 @@
 
                 <div class="col-md-2 layanan">
                     <h4 class="mt-4">Informasi</h4>
-                    <a href="">Bantuan</a>
-                    <a href="">Buka toko</a>
-                    <a href="">Gratis ongkir</a>
+                    <a href="">Bantuan</a> <br>
+                    <a href="">Buka toko</a> <br>
+                    <a href="">Gratis ongkir</a> <br>
                     <a href="">Klaim voucher</a>
                 </div>
 
@@ -297,10 +223,11 @@
             <div class="copyright">Copyright marketplace.com all right reserved</div>
         </div>
     </div>
-    <!-- temlate -->
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-</body>
+    <!-- template -->
+          <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
