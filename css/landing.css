@@ -49,6 +49,11 @@ div.box-kategori p {
     width: 100%;
 }
 
+.card-img-top {
+    height: 110px;
+    object-fit: cover;
+}
+
 @media(max-width: 768px) {
     .kategori-wrap {
         margin-top: 10px;
