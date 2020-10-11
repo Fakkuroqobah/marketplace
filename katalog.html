@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/landing.css">
+
+    <title>MarketPlace</title>
+</head>
+<body>
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginLabel">Masuk</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label class="" for="email">Email / Username</label>
+                            <input type="text" class="form-control" id="email" aria-describedby="email" placeholder="Masukkan email atau username">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="" for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Masukkan password">
+                        </div>
+
+                        <button type="submit" class="btn btn-outline-primary btn-block">Masuk</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="daftar" tabindex="-1" role="dialog" aria-labelledby="daftarLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="daftarLabel">Daftar</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label class="" for="email">Email</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Masukkan email">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="" for="username">Username</label>
+                            <input type="text" class="form-control" id="username" aria-describedby="username" placeholder="Masukkan username">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="" for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Masukkan password">
+                        </div>
+
+                        <button type="submit" class="btn btn-outline-primary btn-block">Daftar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <img class="img-logo mr-2" src="img/logo/marketplace.png" alt="MarketPlace">
+            <a class="navbar-brand" href="#">MarketPlace</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="mr-auto ml-auto form-search">
+                    <div class="input-group">
+                        <input type="text" class="input-search form-control" placeholder="Belanja apa hari ini ?" aria-describedby="search-product">
+                        <div class="input-group-append">
+                            <button class="input-group-text" id="search-product">Cari</button>
+                        </div>
+                    </div>
+                </form>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mr-4 cart-wrap">
+                        <a href="" class="link-cart">
+                            <img src="img/icon/shopping-cart.png" alt="">
+                        </a>
+                    </li>
+                    <li class="nav-item mr-3 login-wrap">
+                        <a href="#" class="btn btn-outline-primary btn-login" data-toggle="modal" data-target="#login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="btn btn-outline-primary btn-daftar" data-toggle="modal" data-target="#daftar">Daftar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container carousel-wrap">
+        
+    </div>
+    
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 tentang">
+                    <img src="img/logo/marketplace.png">
+                    <h4 class="mt-4">MarketPlace</h4>
+                    <p>
+                        <i>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sed itaque 
+                            delectus quisquam quos at eligendi minus praesentium
+                        </i>
+                    </p>
+                </div>
+
+                <div class="col-md-2 informasi">
+                    <h4 class="mt-4">Informasi</h4>
+                    <a href="">Cara belanja</a> <br>
+                    <a href="">Syarat & Ketentuan</a> <br>
+                    <a href="">Kebijakan privasi</a> <br>
+                    <a href="">Tentang kami</a> <br>
+                    <a href="">Blog</a>
+                </div>
+
+                <div class="col-md-2 layanan">
+                    <h4 class="mt-4">Informasi</h4>
+                    <a href="">Bantuan</a>
+                    <a href="">Buka toko</a>
+                    <a href="">Gratis ongkir</a>
+                    <a href="">Klaim voucher</a>
+                </div>
+
+                <div class="col-md-2 pembayaran">
+                    <h4 class="mt-4">Pembayaran</h4>
+                    <img class="bank" src="img/bank/bca.png">
+                    <img class="bank" src="img/bank/bri.png">
+                </div>
+
+                <div class="col-md-2 pengiriman">
+                    <h4 class="mt-4">Pengiriman</h4>
+                    <img class="kurir" src="img/courier/jne.png">
+                    <img class="kurir" src="img/courier/Logo_J&T_Merah_Square.jpg">
+                </div>
+            </div>
+            
+            <div class="copyright">Copyright marketplace.com all right reserved</div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
